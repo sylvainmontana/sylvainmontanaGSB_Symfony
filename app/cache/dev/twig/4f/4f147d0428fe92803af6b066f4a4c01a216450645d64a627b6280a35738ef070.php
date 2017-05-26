@@ -21,20 +21,20 @@ class __TwigTemplate_6bab2a6a7554ff96d289ac52eebb912b6d7a990f9f331efc96f703b6364
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8fb1da457590f390eee0dbf3e11fe96c97aee71669d7e5f5716a9ea1e766c767 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8fb1da457590f390eee0dbf3e11fe96c97aee71669d7e5f5716a9ea1e766c767->enter($__internal_8fb1da457590f390eee0dbf3e11fe96c97aee71669d7e5f5716a9ea1e766c767_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PgGsbFraisBundle::accueil.html.twig"));
+        $__internal_ddff65b60c81244df5d68cdd064c25c4c24fa90bad60690b8e5956b130613d75 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ddff65b60c81244df5d68cdd064c25c4c24fa90bad60690b8e5956b130613d75->enter($__internal_ddff65b60c81244df5d68cdd064c25c4c24fa90bad60690b8e5956b130613d75_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PgGsbFraisBundle::accueil.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_8fb1da457590f390eee0dbf3e11fe96c97aee71669d7e5f5716a9ea1e766c767->leave($__internal_8fb1da457590f390eee0dbf3e11fe96c97aee71669d7e5f5716a9ea1e766c767_prof);
+        $__internal_ddff65b60c81244df5d68cdd064c25c4c24fa90bad60690b8e5956b130613d75->leave($__internal_ddff65b60c81244df5d68cdd064c25c4c24fa90bad60690b8e5956b130613d75_prof);
 
     }
 
     // line 2
     public function block_menu($context, array $blocks = array())
     {
-        $__internal_e4a3a27cf049bb5ad9950dd0d42a9a9366401137bcc865974291a16a4ceb0e5c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e4a3a27cf049bb5ad9950dd0d42a9a9366401137bcc865974291a16a4ceb0e5c->enter($__internal_e4a3a27cf049bb5ad9950dd0d42a9a9366401137bcc865974291a16a4ceb0e5c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
+        $__internal_14c0cde6e8934644ee78a3e3955ee88fae957a896d3f61a42ea0b4f776ee4a6a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_14c0cde6e8934644ee78a3e3955ee88fae957a896d3f61a42ea0b4f776ee4a6a->enter($__internal_14c0cde6e8934644ee78a3e3955ee88fae957a896d3f61a42ea0b4f776ee4a6a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
 
         // line 3
         echo "<div id=\"menuGauche\">
@@ -72,13 +72,16 @@ class __TwigTemplate_6bab2a6a7554ff96d289ac52eebb912b6d7a990f9f331efc96f703b6364
         echo "\" title=\"Se déconnecter\">Déconnexion</a>
            </li>
            <li class=\"smenu\">
-              <a href=\"index.php?uc=validerFrais&action=voirFrais\" title=\"valider les frais\">Valider les frais</a>
+              <a href=\"";
+        // line 22
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("pg_gsb_frais_validerfraishorsforfais");
+        echo "\" title=\"valider les frais\">Valider les frais</a>
            </li>
          </ul>
      </div> 
 ";
         
-        $__internal_e4a3a27cf049bb5ad9950dd0d42a9a9366401137bcc865974291a16a4ceb0e5c->leave($__internal_e4a3a27cf049bb5ad9950dd0d42a9a9366401137bcc865974291a16a4ceb0e5c_prof);
+        $__internal_14c0cde6e8934644ee78a3e3955ee88fae957a896d3f61a42ea0b4f776ee4a6a->leave($__internal_14c0cde6e8934644ee78a3e3955ee88fae957a896d3f61a42ea0b4f776ee4a6a_prof);
 
     }
 
@@ -94,7 +97,7 @@ class __TwigTemplate_6bab2a6a7554ff96d289ac52eebb912b6d7a990f9f331efc96f703b6364
 
     public function getDebugInfo()
     {
-        return array (  71 => 19,  65 => 16,  59 => 13,  53 => 9,  47 => 7,  45 => 6,  40 => 3,  34 => 2,  11 => 1,);
+        return array (  77 => 22,  71 => 19,  65 => 16,  59 => 13,  53 => 9,  47 => 7,  45 => 6,  40 => 3,  34 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -128,7 +131,7 @@ class __TwigTemplate_6bab2a6a7554ff96d289ac52eebb912b6d7a990f9f331efc96f703b6364
               <a href=\"{{path('pg_gsb_frais_deconnexion')}}\" title=\"Se déconnecter\">Déconnexion</a>
            </li>
            <li class=\"smenu\">
-              <a href=\"index.php?uc=validerFrais&action=voirFrais\" title=\"valider les frais\">Valider les frais</a>
+              <a href=\"{{path('pg_gsb_frais_validerfraishorsforfais')}}\" title=\"valider les frais\">Valider les frais</a>
            </li>
          </ul>
      </div> 
